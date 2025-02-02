@@ -59,7 +59,7 @@ const Registration = () => {
           <div className="space-y-8">
             <div className="text-center">
               <p className="text-red-600 font-semibold mb-4">Registration Deadline: February 20, 2025</p>
-              <a href="https://forms.gle/4kpcXZ8SJVYWXCeu5" 
+              <a href="https://forms.gle/kRwBWRjXpi6kVTFz8" 
                  target="_blank" 
                  rel="noopener noreferrer"
                  className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg inline-block">

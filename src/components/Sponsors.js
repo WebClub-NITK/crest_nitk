@@ -6,7 +6,7 @@ import qrCodeImage from '../img/WhatsApp Image 2025-01-01 at 11.35.47.jpeg';
 import anrfLogo from '../img/PHOTO-2025-01-24-19-36-23.jpg';
 import aparLogo from '../img/image copy 5.png';
 import durgaChemicalsLogo from '../img/image copy 4.png';
-
+import cezenTechLogo from '../img/Screenshot 2025-02-03 at 1.47.13 PM.png';
 const Sponsors = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -17,6 +17,13 @@ const Sponsors = () => {
     {
       name: 'ANRF',
       logo: anrfLogo
+    }
+  ];
+
+  const silverSponsors = [
+    {
+      name: 'Cezen Tech',
+      logo: cezenTechLogo
     }
   ];
 
@@ -63,7 +70,8 @@ const Sponsors = () => {
         </motion.div>
 
         <SponsorTier title="Platinum Sponsor" sponsors={platinumSponsors} gridCols="grid-cols-1" logoSize="w-96 h-64" />
-        <SponsorTier title="Other Sponsors" sponsors={otherSponsors} gridCols="grid-cols-2 md:grid-cols-3" logoSize="w-32 h-20" />
+        <SponsorTier title="Silver Sponsor" sponsors={silverSponsors} gridCols="grid-cols-1" logoSize="w-64 h-40" />
+        <SponsorTier title="Other Sponsors" sponsors={otherSponsors} gridCols="grid-cols-2 md:grid-cols-2" logoSize="w-32 h-20" />
 
         <motion.div
           initial={{ opacity: 0, y: 50 }}

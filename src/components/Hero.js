@@ -9,6 +9,7 @@ import kspcbLogo from '../img/WhatsApp Image 2025-01-18 at 20.45.37.jpeg';
 import anrfLogo from '../img/PHOTO-2025-01-24-19-36-23.jpg';
 import aparLogo from '../img/image copy 5.png';
 import durgaChemicalsLogo from '../img/image copy 4.png';
+import cezenTechLogo from '../img/Screenshot 2025-02-03 at 1.47.13 PM.png';
 import wileyLogo from '../img/WhatsApp Image 2025-01-18 at 20.38.57.jpeg';
 
 const Hero = () => {
@@ -134,6 +135,12 @@ const Hero = () => {
                 className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center"
               >
                 <img src={anrfLogo} alt="ANRF Logo" className="w-full h-full object-contain" />
+              </motion.div>
+              <motion.div 
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center"
+              >
+                <img src={cezenTechLogo} alt="Cezen Tech Logo" className="w-full h-full object-contain" />
               </motion.div>
               <motion.div 
                 whileHover={{ scale: 1.05 }}

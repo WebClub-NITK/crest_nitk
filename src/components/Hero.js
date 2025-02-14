@@ -11,6 +11,7 @@ import aparLogo from '../img/image copy 5.png';
 import durgaChemicalsLogo from '../img/image copy 4.png';
 import cezenTechLogo from '../img/Screenshot 2025-02-03 at 1.47.13 PM.png';
 import wileyLogo from '../img/WhatsApp Image 2025-01-18 at 20.38.57.jpeg';
+import springerImage from '../img/PHOTO-2025-02-11-23-22-49.jpg';
 
 const Hero = () => {
   return (
@@ -117,7 +118,6 @@ const Hero = () => {
               </div>
               <span className="text-sm text-gray-800 max-w-[150px] text-center">NITK, Surathkal</span>
             </motion.div>
-            <h2 className="text-xl font-semibold text-green-700">In association with</h2>
             <motion.div 
               whileHover={{ scale: 1.05 }}
               className="flex flex-col items-center"
@@ -128,41 +128,47 @@ const Hero = () => {
               <span className="text-sm text-gray-800 max-w-[150px] text-center">Karnataka State Pollution Control Board</span>
             </motion.div>
 
-            <h2 className="text-xl font-semibold text-green-700">Sponsored By</h2>
+            <h2 className="text-xl font-semibold text-green-700 mt-8">Sponsored By</h2>
             <div className="flex flex-wrap justify-center gap-8 mt-4">
               <motion.div 
                 whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center"
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
               >
                 <img src={anrfLogo} alt="ANRF Logo" className="w-full h-full object-contain" />
               </motion.div>
               <motion.div 
                 whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center"
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
               >
                 <img src={cezenTechLogo} alt="Cezen Tech Logo" className="w-full h-full object-contain" />
               </motion.div>
               <motion.div 
                 whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center"
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
               >
                 <img src={aparLogo} alt="APAR Logo" className="w-full h-full object-contain" />
               </motion.div>
               <motion.div 
                 whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center"
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
               >
                 <img src={durgaChemicalsLogo} alt="Durga Chemicals Logo" className="w-full h-full object-contain" />
               </motion.div>
             </div>
 
-            <h2 className="text-xl font-semibold text-green-700 mt-8">Publication Partner</h2>
+            <h2 className="text-xl font-semibold text-green-700 mt-8">Publication Partners</h2>
             <div className="flex flex-wrap justify-center gap-8 mt-4">
               <motion.div 
                 whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center"
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
               >
                 <img src={wileyLogo} alt="Wiley Publication Logo" className="w-full h-full object-contain" />
+              </motion.div>
+              <motion.div 
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
+              >
+                <img src={springerImage} alt="Springer Nature Logo" className="w-full h-full object-contain" />
               </motion.div>
             </div>
           </motion.div>

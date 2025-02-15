@@ -4,7 +4,6 @@ import { Calendar, MapPin } from 'react-feather';
 import { TypeAnimation } from 'react-type-animation';
 import { Link } from 'react-router-dom';
 import nitkLogo from '../img/image copy 2.png';
-import backgroundImage from '../img/WhatsApp Image 2025-01-18 at 20.45.37.jpeg';
 import kspcbLogo from '../img/WhatsApp Image 2025-01-18 at 20.45.37.jpeg';
 import anrfLogo from '../img/PHOTO-2025-01-24-19-36-23.jpg';
 import aparLogo from '../img/image copy 5.png';
@@ -12,6 +11,7 @@ import durgaChemicalsLogo from '../img/image copy 4.png';
 import cezenTechLogo from '../img/Screenshot 2025-02-03 at 1.47.13 PM.png';
 import wileyLogo from '../img/WhatsApp Image 2025-01-18 at 20.38.57.jpeg';
 import springerImage from '../img/PHOTO-2025-02-11-23-22-49.jpg';
+import newSponsorImage from '../img/IMG_20240606_222332.jpg';
 
 const Hero = () => {
   return (
@@ -154,6 +154,12 @@ const Hero = () => {
               >
                 <img src={durgaChemicalsLogo} alt="Durga Chemicals Logo" className="w-full h-full object-contain" />
               </motion.div>
+              <motion.div 
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
+              >
+                <img src={newSponsorImage} alt="New Sponsor Logo" className="w-full h-full object-contain" />
+              </motion.div>
             </div>
 
             <h2 className="text-xl font-semibold text-green-700 mt-8">Publication Partners</h2>
@@ -163,12 +169,6 @@ const Hero = () => {
                 className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
               >
                 <img src={wileyLogo} alt="Wiley Publication Logo" className="w-full h-full object-contain" />
-              </motion.div>
-              <motion.div 
-                whileHover={{ scale: 1.05 }}
-                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
-              >
-                <img src={springerImage} alt="Springer Nature Logo" className="w-full h-full object-contain" />
               </motion.div>
             </div>
           </motion.div>
@@ -186,18 +186,24 @@ const Hero = () => {
             >
               <div className="animate-marquee inline-block">
                 <span className="text-green-700 font-semibold px-4">
-                  🔴 Selected papers will be published in Material Science and Engineering Technology (SCIE, IF-1.2), Wiley Publication as special issue
-                </span>{' '}
+                  🔴 Early bird registration closed - Regular registration opened
+                </span>
                 <span className="text-green-700 font-semibold px-4">
-                  🔴 The abstract submission date extended to 30 January 2025
+                  🔴 Selected papers will be published in Material Science and Engineering Technology (SCIE, IF-1.2), Wiley Publication as special issue
+                </span>
+                <span className="text-green-700 font-semibold px-4">
+                  🔴 Selected good quality papers will be published in Springer conference proceedings
                 </span>
               </div>
               <div className="animate-marquee2 inline-block absolute">
                 <span className="text-green-700 font-semibold px-4">
-                  🔴 Selected papers will be published in Material Science and Engineering Technology (SCIE, IF-1.2), Wiley Publication as special issue
-                </span>{' '}
+                  🔴 Early bird registration closed - Regular registration opened
+                </span>
                 <span className="text-green-700 font-semibold px-4">
-                  🔴 The abstract submission date extended to 30 January 2025
+                  🔴 Selected papers will be published in Material Science and Engineering Technology (SCIE, IF-1.2), Wiley Publication as special issue
+                </span>
+                <span className="text-green-700 font-semibold px-4">
+                  🔴 Selected good quality papers will be published in Springer conference proceedings
                 </span>
               </div>
             </motion.div>

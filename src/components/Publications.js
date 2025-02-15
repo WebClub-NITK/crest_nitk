@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import wileyImage from '../img/WhatsApp Image 2025-01-18 at 20.38.57.jpeg';
-import { Download } from 'react-feather';
 
 const Publications = () => {
   const [ref, inView] = useInView({
@@ -15,7 +14,7 @@ const Publications = () => {
   const handleDownloadTemplate = () => {
     const link = document.createElement('a');
     link.href = '/documents/Updated conference proceedings template_NITK Crest 2025 (2).pdf';
-    link.download = 'NITK_CREST_2025_Conference_Proceedings_Template.pdf';
+    link.download = 'NITK-CREST 2025 Conference Proceedings Template.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -45,14 +44,16 @@ const Publications = () => {
             >
               <h3 className="text-2xl font-bold text-gray-800 mb-6">Conference Proceedings</h3>
               <p className="text-gray-600 mb-6">
-                All the abstracts accepted after peer review from registered participants will be published in the conference proceedings with ISBN number.
+                Selected good quality papers will be published in Springer conference proceedings. Separate communication will be shared with the participants regarding the submission of full papers after the conference.
               </p>
               <button
                 onClick={handleDownloadTemplate}
-                className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded-lg transition-colors"
+                className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg inline-flex items-center space-x-2 transition-colors duration-300"
               >
-                <Download size={20} />
-                <span>Download Template</span>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                <span>Proceedings</span>
               </button>
             </motion.div>
 
@@ -63,7 +64,7 @@ const Publications = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300"
             >
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">Publication Partner</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-6">Special Issue Publication</h3>
               <div 
                 className="flex items-center justify-between p-4 bg-gray-50 rounded-lg cursor-pointer hover:bg-gray-100 transition-all"
                 onClick={() => setShowModal(true)}
@@ -76,6 +77,32 @@ const Publications = () => {
               </div>
             </motion.div>
           </div>
+
+          {/* Presentation Guidelines */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="mt-12 bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300"
+          >
+            <h3 className="text-2xl font-bold text-gray-800 mb-6">Instructions for Presentations</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="text-lg font-semibold text-gray-800 mb-4">Poster Presentation</h4>
+                <ul className="list-disc list-inside text-gray-600 space-y-2">
+                  <li>Poster Size: A0 (W:84.1 cm x H:118.9 cm)</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-gray-800 mb-4">Oral Presentation</h4>
+                <ul className="list-disc list-inside text-gray-600 space-y-2">
+                  <li>Duration: 10 minutes total</li>
+                  <li>8 minutes for presentation</li>
+                  <li>2 minutes for interaction</li>
+                </ul>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -98,7 +125,7 @@ const Publications = () => {
             >
               <img 
                 src={wileyImage} 
-                alt="Wiley Publication" 
+                alt="Publication Partner" 
                 className="w-full h-auto"
               />
               <button

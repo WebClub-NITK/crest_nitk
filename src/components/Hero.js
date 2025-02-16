@@ -12,6 +12,7 @@ import cezenTechLogo from '../img/Screenshot 2025-02-03 at 1.47.13 PM.png';
 import wileyLogo from '../img/WhatsApp Image 2025-01-18 at 20.38.57.jpeg';
 import springerImage from '../img/PHOTO-2025-02-11-23-22-49.jpg';
 import newSponsorImage from '../img/IMG_20240606_222332.jpg';
+import newSponsorImage2 from '../img/PHOTO-2025-02-15-19-36-40.jpg';
 
 const Hero = () => {
   return (
@@ -140,13 +141,14 @@ const Hero = () => {
                 whileHover={{ scale: 1.05 }}
                 className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
               >
-                <img src={cezenTechLogo} alt="Cezen Tech Logo" className="w-full h-full object-contain" />
+                <img src={aparLogo} alt="APAR Logo" className="w-full h-full object-contain" />
               </motion.div>
               <motion.div 
                 whileHover={{ scale: 1.05 }}
                 className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
-              >
-                <img src={aparLogo} alt="APAR Logo" className="w-full h-full object-contain" />
+                >
+                <img src={cezenTechLogo} alt="Cezen Tech Logo" className="w-full h-full 
+                object-contain" />
               </motion.div>
               <motion.div 
                 whileHover={{ scale: 1.05 }}
@@ -160,6 +162,12 @@ const Hero = () => {
               >
                 <img src={newSponsorImage} alt="New Sponsor Logo" className="w-full h-full object-contain" />
               </motion.div>
+              <motion.div 
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
+              >
+                <img src={newSponsorImage2} alt="New Sponsor 2 Logo" className="w-full h-full object-contain" />
+              </motion.div>
             </div>
 
             <h2 className="text-xl font-semibold text-green-700 mt-8">Publication Partners</h2>
@@ -169,6 +177,12 @@ const Hero = () => {
                 className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
               >
                 <img src={wileyLogo} alt="Wiley Publication Logo" className="w-full h-full object-contain" />
+              </motion.div>
+              <motion.div 
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-20 overflow-hidden shadow-lg rounded-lg flex items-center justify-center bg-white p-2"
+              >
+                <img src={springerImage} alt="Springer Nature Logo" className="w-full h-full object-contain" />
               </motion.div>
             </div>
           </motion.div>

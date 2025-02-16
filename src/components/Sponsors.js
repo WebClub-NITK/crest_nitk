@@ -8,7 +8,7 @@ import aparLogo from '../img/image copy 5.png';
 import durgaChemicalsLogo from '../img/image copy 4.png';
 import cezenTechLogo from '../img/Screenshot 2025-02-03 at 1.47.13 PM.png';
 import newSponsorImage from '../img/IMG_20240606_222332.jpg';
-
+import newSponsorImage2 from '../img/PHOTO-2025-02-15-19-36-40.jpg';
 const Sponsors = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -39,12 +39,12 @@ const Sponsors = () => {
       logo: durgaChemicalsLogo
     },
     {
-      name: 'Cezen Tech',
-      logo: cezenTechLogo
-    },
-    {
       name: 'New Sponsor',
       logo: newSponsorImage
+    },
+    {
+      name: 'New Sponsor 2',
+      logo: newSponsorImage2
     }
   ];
 

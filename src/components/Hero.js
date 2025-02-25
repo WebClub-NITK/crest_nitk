@@ -89,7 +89,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 4.2, duration: 0.8 }}
-            className="mt-8"
+            className="mt-8 flex justify-center gap-4"
           >
             <Link to="/registration">
               <motion.button
@@ -100,6 +100,15 @@ const Hero = () => {
                 Register Now
               </motion.button>
             </Link>
+            <a href="https://drive.google.com/file/d/1NbkZAF5gpfGDmVl0z_tktfjg-4z5HheW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="bg-blue-600 text-white font-medium px-6 sm:px-8 py-3 rounded-full shadow-md hover:bg-blue-700 text-sm sm:text-base transition-colors"
+              >
+                View Schedule
+              </motion.button>
+            </a>
           </motion.div>
 
           {/* Organized By Section */}
@@ -200,6 +209,9 @@ const Hero = () => {
             >
               <div className="animate-marquee inline-block">
                 <span className="text-green-700 font-semibold px-4">
+                  🔴 Conference schedule has been uploaded - Check it out!
+                </span>
+                <span className="text-green-700 font-semibold px-4">
                   🔴 Early bird registration closed - Regular registration opened
                 </span>
                 <span className="text-green-700 font-semibold px-4">
@@ -210,6 +222,9 @@ const Hero = () => {
                 </span>
               </div>
               <div className="animate-marquee2 inline-block absolute">
+                <span className="text-green-700 font-semibold px-4">
+                  🔴 Conference schedule has been uploaded - Check it out!
+                </span>
                 <span className="text-green-700 font-semibold px-4">
                   🔴 Early bird registration closed - Regular registration opened
                 </span>

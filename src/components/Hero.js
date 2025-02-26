@@ -100,7 +100,7 @@ const Hero = () => {
                 Register Now
               </motion.button>
             </Link>
-            <a href="https://drive.google.com/file/d/1NbkZAF5gpfGDmVl0z_tktfjg-4z5HheW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <a href="/documents/NITK CREST SCHEDULE FINAL.pdf" target="_blank" rel="noopener noreferrer">
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}

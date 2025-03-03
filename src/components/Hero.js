@@ -109,6 +109,15 @@ const Hero = () => {
                 View Schedule
               </motion.button>
             </a>
+            <a href="/documents/Best Presentation Awards.pdf" target="_blank" rel="noopener noreferrer">
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="bg-purple-600 text-white font-medium px-6 sm:px-8 py-3 rounded-full shadow-md hover:bg-purple-700 text-sm sm:text-base transition-colors"
+              >
+                Awards
+              </motion.button>
+            </a>
           </motion.div>
 
           {/* Organized By Section */}
